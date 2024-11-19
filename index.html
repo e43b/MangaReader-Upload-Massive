@@ -4,7 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MangaReader Massive Manga Uploader Tool</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #4589DC;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        header .btn-primary {
+            background: #fff;
+            color: #4589DC;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        header .btn-primary:hover {
+            background: #e0e0e0;
+        }
+
+        main {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        #features h2, #videos h2 {
+            color: #4589DC;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        #features ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            display: inline-block;
+            text-align: left;
+        }
+
+        #videos .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        #videos img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        #videos img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #4589DC;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        #videos .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .video-item {
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s;
+        }
+
+        .video-item:hover {
+            transform: scale(1.05);
+        }
+
+        .video-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .video-item p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #4589DC;
+            text-align: center;
+            transition: color 0.3s;
+        }
+
+        .video-item:hover p {
+            color: #2d5da8;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,42 +150,42 @@
         </section>
 
         <section id="videos">
-    <h2>Veja como funciona</h2>
-    <div class="video-grid">
-        <a href="https://youtu.be/u_QnJpqBfpE" target="_blank" class="video-item">
-            <img src="https://img.youtube.com/vi/u_QnJpqBfpE/hqdefault.jpg" alt="Vídeo 1">
-            <p>Opção 1</p>
-        </a>
-        <a href="https://youtu.be/nGBUdyMnTcY" target="_blank" class="video-item">
-            <img src="https://img.youtube.com/vi/nGBUdyMnTcY/hqdefault.jpg" alt="Vídeo 2">
-            <p>Opção 1 Criar manga e upar todos os capítulos</p>
-        </a>
-        <a href="https://youtu.be/HLSirRJDDww" target="_blank" class="video-item">
-            <img src="https://img.youtube.com/vi/HLSirRJDDww/hqdefault.jpg" alt="Vídeo 3">
-            <p>Opção 1 Criar manga e upar alguns capitulos</p>
-        </a>
-        <a href="https://youtu.be/H_yA9qgkeWs" target="_blank" class="video-item">
-            <img src="https://img.youtube.com/vi/H_yA9qgkeWs/hqdefault.jpg" alt="Vídeo 4">
-            <p>Opção 2 Criar Mangas</p>
-        </a>
-        <a href="https://youtu.be/rKBzAdbTgWI" target="_blank" class="video-item">
-            <img src="https://img.youtube.com/vi/rKBzAdbTgWI/hqdefault.jpg" alt="Vídeo 5">
-            <p>Opção 3 Fazer upload de capítulos</p>
-        </a>
-        <a href="https://youtu.be/9GtZtvxX6qo" target="_blank" class="video-item">
-            <img src="https://img.youtube.com/vi/9GtZtvxX6qo/hqdefault.jpg" alt="Vídeo 6">
-            <p>Opção 4</p>
-        </a>
-        <a href="https://youtu.be/3E8yHF18s3Y" target="_blank" class="video-item">
-            <img src="https://img.youtube.com/vi/3E8yHF18s3Y/hqdefault.jpg" alt="Vídeo 7">
-            <p>Opção 5 Fazer upload de mangás completos sequencialmente</p>
-        </a>
-        <a href="https://youtu.be/0Z3fM0bYmnY" target="_blank" class="video-item">
-            <img src="https://img.youtube.com/vi/0Z3fM0bYmnY/hqdefault.jpg" alt="Vídeo 8">
-            <p>Opção 6 Atualizar últimos capitulos automaticamente</p>
-        </a>
-    </div>
-</section>
+            <h2>Veja como funciona</h2>
+            <div class="video-grid">
+                <a href="https://youtu.be/u_QnJpqBfpE" target="_blank" class="video-item">
+                    <img src="https://img.youtube.com/vi/u_QnJpqBfpE/hqdefault.jpg" alt="Vídeo 1">
+                    <p>Opção 1</p>
+                </a>
+                <a href="https://youtu.be/nGBUdyMnTcY" target="_blank" class="video-item">
+                    <img src="https://img.youtube.com/vi/nGBUdyMnTcY/hqdefault.jpg" alt="Vídeo 2">
+                    <p>Opção 1 Criar manga e upar todos os capítulos</p>
+                </a>
+                <a href="https://youtu.be/HLSirRJDDww" target="_blank" class="video-item">
+                    <img src="https://img.youtube.com/vi/HLSirRJDDww/hqdefault.jpg" alt="Vídeo 3">
+                    <p>Opção 1 Criar manga e upar alguns capítulos</p>
+                </a>
+                <a href="https://youtu.be/H_yA9qgkeWs" target="_blank" class="video-item">
+                    <img src="https://img.youtube.com/vi/H_yA9qgkeWs/hqdefault.jpg" alt="Vídeo 4">
+                    <p>Opção 2 Criar Mangas</p>
+                </a>
+                <a href="https://youtu.be/rKBzAdbTgWI" target="_blank" class="video-item">
+                    <img src="https://img.youtube.com/vi/rKBzAdbTgWI/hqdefault.jpg" alt="Vídeo 5">
+                    <p>Opção 3 Fazer upload de capítulos</p>
+                </a>
+                <a href="https://youtu.be/9GtZtvxX6qo" target="_blank" class="video-item">
+                    <img src="https://img.youtube.com/vi/9GtZtvxX6qo/hqdefault.jpg" alt="Vídeo 6">
+                    <p>Opção 4</p>
+                </a>
+                <a href="https://youtu.be/3E8yHF18s3Y" target="_blank" class="video-item">
+                    <img src="https://img.youtube.com/vi/3E8yHF18s3Y/hqdefault.jpg" alt="Vídeo 7">
+                    <p>Opção 5 Fazer upload de mangás completos sequencialmente</p>
+                </a>
+                <a href="https://youtu.be/0Z3fM0bYmnY" target="_blank" class="video-item">
+                    <img src="https://img.youtube.com/vi/0Z3fM0bYmnY/hqdefault.jpg" alt="Vídeo 8">
+                    <p>Opção 6 Atualizar últimos capítulos automaticamente</p>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
